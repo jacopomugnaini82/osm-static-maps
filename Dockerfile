@@ -28,4 +28,3 @@ COPY src ./src/
 EXPOSE 3000
 CMD [ "npm", "run", "installandstartdev" ]
 
-HEALTHCHECK CMD curl -f http://localhost:3000/health || exit 1
