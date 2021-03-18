@@ -20,7 +20,11 @@ RUN \
     && \
     /root/.cargo/bin/cargo install oxipng
 
+
 WORKDIR /app
+COPY package*.json ./
+COPY src ./src/
+
 EXPOSE 3000
 CMD [ "npm", "run", "installandstartdev" ]
 
